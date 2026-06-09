@@ -1,0 +1,372 @@
+/* hero-sektion */
+
+.hero {
+  min-height: 500px;
+
+  background: var(--color-text_white);
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 3rem 5%;
+
+  background-image: url("../img/img/baggrund_seamless.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 5%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  color: var(--color-text_white);
+}
+
+.hero-content h2 {
+  font-size: 25px;
+  margin-top: 0.5rem;
+  color: var(--color-text_white);
+}
+
+/* sektion 1 */
+/* layout */
+
+.tema_sektion {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  min-height: 500px;
+}
+
+/* billed og tekst i sektion 1 */
+
+.tema_billede {
+  background: var(--color-text_creme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+
+  padding-top: 20px;
+  align-items: center;
+}
+
+.tema_billede img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+
+  max-width: 800px;
+  max-height: 600px;
+
+  background: var(--color-text_white);
+}
+
+.tema_text {
+  background: var(--color-text_creme);
+  padding: 2rem;
+  padding-left: 0%;
+}
+
+.tema_text h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text_dark);
+}
+
+.tema_text p {
+  margin-bottom: 1rem;
+  line-height: 25px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+/* se temaer knap */
+
+.temaer_btn {
+  width: 230px;
+  height: 55px;
+  text-align: center;
+  padding-top: 12px;
+  background-color: var(--color-billede);
+  border-radius: 20px;
+  border: 3px solid var(--color-text_white);
+
+  font-family: "spacegrotesk";
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text_white);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.temaer_btn:hover,
+.temaer2_btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-btn_lightpink);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* sektion 2 */
+/* layout */
+
+.tema_sektion2 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  min-height: 500px;
+}
+
+/* billed og tekst i sektion 2 */
+
+.tema_billede2 {
+  background: var(--color-text_creme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+}
+
+.tema_billede2 img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+}
+
+.tema_text2 {
+  background: var(--color-text_creme);
+  padding: 2rem;
+}
+
+.tema_text2 h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text_dark);
+}
+
+.tema_text2 p {
+  margin-bottom: 1rem;
+  line-height: 25px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+/* se temaer knap 2 */
+
+.temaer2_btn {
+  width: 230px;
+  height: 55px;
+  text-align: center;
+  padding-top: 12px;
+  background-color: var(--color-billede);
+  border-radius: 20px;
+  border: 3px solid var(--color-text_white);
+
+  font-family: "spacegrotesk";
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text_white);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* små kunst billeder */
+
+.ansigt_medkrone img {
+  max-width: 100px;
+  padding-top: 50px;
+
+  margin-right: 30px;
+}
+
+.ansigt1 img {
+  max-width: 100px;
+  padding-top: 50px;
+}
+
+/* knapper class */
+
+.knap_img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+}
+
+.knap_img a {
+  margin-top: 110px;
+}
+
+.knap_img2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+}
+
+.knap_img2 a {
+  margin-top: 110px;
+}
+
+/* mobil */
+
+@media (max-width: 500px) {
+  /* sektion 1 */
+
+  .tema_sektion {
+    grid-template-columns: 1fr;
+  }
+
+  /* så billeder kommer før tekst */
+
+  .tema_sektion,
+  .tema_sektion2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* gør så billederne ikke går uden for rammen på mobilversion */
+
+  .tema_billede {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tema_billede img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: 12px solid var(--color-bgmørk);
+    box-sizing: border-box;
+    display: block;
+  }
+
+  /* gør så billederne og tekst ikke går uden for rammen på mobilversion */
+
+  .tema_sektion img,
+  .tema_sektion2 img {
+    margin: 0;
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .tema_sektion h2,
+  .tema_sektion p,
+  .tema_sektion a {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .tema_sektion2 {
+    grid-template-columns: 1fr;
+  }
+
+  .tema_sektion2 h2,
+  .tema_sektion2 p,
+  .tema_sektion2 a {
+    margin-left: 10px;
+  }
+
+  /* gør så billederne kommer før teksten i de 2 sektioner */
+
+  .tema_billede,
+  .tema_billede2 {
+    order: -1;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .tema_text,
+  .tema_text2 {
+    margin-left: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  /* gør så knapperne og de små billeder bliver centreret */
+
+  .knap_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .knap_img2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .knap_img a,
+  .knap_img2 a {
+    margin-top: 40px;
+  }
+
+  .ansigt_medkrone img,
+  .ansigt1 img {
+    max-width: 80px;
+    padding-top: 10px;
+  }
+
+  /* gør så billederne er centreret */
+
+  .tema_billede2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tema_billede2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: 12px solid var(--color-bgmørk);
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* gør så det er inde for rammen */
+
+  .tema_text2 {
+    margin-left: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+}

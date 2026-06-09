@@ -1,0 +1,312 @@
+/* portræt sektion */
+
+.portrait {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  min-height: 500px;
+}
+
+.portrait_img {
+  background: var(--color-text_creme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+
+  padding-top: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.portrait_img img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+  max-width: 70%;
+}
+
+.portrait_text {
+  background-color: var(--color-text_creme);
+  background: var(--color-text_creme);
+  padding: 0rem;
+
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+.portrait_text h2 {
+  margin-bottom: 15px;
+  color: var(--color-text_dark);
+}
+
+.portrait_text p {
+  margin-bottom: 1rem;
+  line-height: 15px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+/* uddannelse- og erhvervserfaring sektion */
+
+.info_omgmig1 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  min-height: 500px;
+}
+
+.ommig_img1 {
+  background-color: var(--color-text_creme);
+  background: var(--color-text_creme);
+  padding: 0rem;
+}
+
+.ommig_img1 h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text_dark);
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+.ommig_img1 p {
+  margin-bottom: 1rem;
+  line-height: 15px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+.omgmig_text1 {
+  background: var(--color-text_creme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+
+  padding-top: 20px;
+  align-items: center;
+}
+
+.ommig_text1 img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+  max-width: 90%;
+
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* hvad har jeg fået ud af 1. semester? */
+
+.info_ommig2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  min-height: 500px;
+}
+
+.ommig_img2 {
+  background-color: var(--color-text_creme);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+
+  padding: 0rem;
+
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+.ommig_text2 img {
+  border-radius: 50px;
+  border: 20px solid var(--color-bgmørk);
+  max-width: 80%;
+
+  margin-left: 60px;
+}
+
+.ommig_img2 h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text_dark);
+}
+
+.ommig_img2 p {
+  margin-bottom: 1rem;
+  line-height: 15px;
+  color: var(--color-text_dark);
+
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 1px;
+}
+
+/* mine egne billeder sektion */
+/* fisk */
+
+.titel_kunst img {
+  max-width: 130px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* popcornbægre */
+
+.popcorn img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* svamp */
+
+.svamp img {
+  padding-top: 10px;
+  max-width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* mobil */
+
+@media (max-width: 500px) {
+  /* portræt sektion */
+
+  .portrait {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait_img {
+    min-height: auto;
+    padding-top: 10px;
+  }
+
+  .portrait_text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .portrait_text h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .portrait_text p {
+    margin-top: 0;
+  }
+
+  /* uddannelse- og erhvervserfaring sektion */
+
+  .info_omgmig1 {
+    grid-template-columns: 1fr;
+  }
+
+  .info_ommig2 {
+    grid-template-columns: 1fr;
+  }
+
+  .ommig_text1 {
+    order: -1;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .ommig_text1 img {
+    width: 110%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: 12px solid var(--color-bgmørk);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .ommig_img1 {
+    padding-top: 2rem;
+  }
+
+  /* h2 og p på alle sektioner */
+
+  .portrait_text p,
+  .portrait_text h2,
+  .ommig_img1 p,
+  .ommig_img1 h2,
+  .ommig_img2 p,
+  .ommig_img2 h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  /* 1. semester */
+
+  .ommig_text2 {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .ommig_text2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: 12px solid var(--color-bgmørk);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  /* egen kunst */
+
+  .titel_kunst img {
+    margin: 0 auto;
+    max-width: 90px;
+    display: block;
+    padding-bottom: 80px;
+  }
+
+  .popcorn img {
+    margin: 0 auto;
+    max-width: 70px;
+    display: block;
+    padding-bottom: 80px;
+  }
+
+  .svamp img {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 30px;
+  }
+}
